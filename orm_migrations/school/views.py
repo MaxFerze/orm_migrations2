@@ -6,9 +6,9 @@ from .models import Student
 
 def students_list(request):
     template = 'school/students_list.html'
-    student = Student.objects.all()
+    object_list = Student.objects.all()
     context = {
-        'student' : student,
+        'student' : object_list,
     }
 
     # используйте этот параметр для упорядочивания результатов
